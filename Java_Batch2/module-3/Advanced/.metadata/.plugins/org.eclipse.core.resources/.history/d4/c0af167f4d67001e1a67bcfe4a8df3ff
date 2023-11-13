@@ -1,0 +1,5 @@
+package com.ansiya.repository;
+
+public interface AnsiRepo {
+
+}

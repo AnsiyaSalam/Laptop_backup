@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_App</title>
+    <style>
+        form{
+            margin: auto;
+            width: 350px;
+            margin-top: 10%;
+        }
+
+        #h{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2 id="h"><u>To Do App</u></h2>
+        <fieldset>
+            Task Name:<input type="text" name="taskName"></br>
+            Due Date:<input type="date" name="dueDate"></br>
+            Priority:
+            <select name="priority">
+                <option value="high">High</option>
+                <option value="average">Average</option>
+                <option value="low">Low</option>
+            </select></br>
+            <button type="btn" value="submit">Submit</button>
+            <button type="btn" value="viewall">View All</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseStudy2</title>
+</head>
+<body>
+    <div>
+        <label for="">Enter First Name</label>
+        <input type="text" id="first" required>
+    </div>
+
+    <div>
+        <label for="">Enter Second Name</label>
+        <input type="text" id="second" required>
+    </div>
+
+    <div>
+        <label for="" id="output"></label>
+    </div>
+
+    <div>
+        <button type="button" onclick="displayName()">Click</button>
+    </div>
+
+</body>
+
+<script>
+    function displayName()
+    {
+        let firstName = document.getElementById('first').value;
+        let secondName = document.getElementById('second').value;
+
+        document.getElementById('output').innerHTML = "Hello " +firstName + secondName;
+    }
+</script>
+</html>

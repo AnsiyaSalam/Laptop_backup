@@ -1,0 +1,76 @@
+package com.server.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.server.model.Server;
+import com.server.repository.ServerRepo;
+
+
+
+@RestController
+public class ServerController {
+	
+	@Autowired
+	private ServerRepo repo;
+	
+	@GetMapping("/findAll")
+	public ResponseEntity<List<Server>> getAll()
+	{
+		return ResponseEntity.ok().body(repo.findAll());
+	}
+	
+	@PostMapping("/post")
+	public ResponseEntity<Server> create(@RequestBody Server server)
+	{
+		return ResponseEntity.ok().body(repo.save(server));
+	}
+	
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Server> update(@RequestBody Server server, @PathVariable int id)
+	{
+		Optional<Server> ser = repo.findById(id);
+		if(ser.isEmpty()) 
+		{
+			return ResponseEntity.noContent().build();
+		}
+		return ResponseEntity.ok().body(repo.save(server));			
+	}
+	
+//	@DeleteMapping("/delete/{id}")
+//	public ResponseEntity<String> delete(@PathVariable int id)
+//	{
+//		Optional<Server> server=repo.findById(id);
+//		repo.delete(server.get());
+//		return ResponseEntity.ok().body("deleted");
+//	}
+	
+	@DeleteMapping("/delete/{id}")
+	public ResponseEntity<String> delete(@PathVariable int id)
+	{
+		Optional<Server> server=repo.findById(id);
+		if(server.isPresent())
+		{
+			repo.delete(server.get());
+		}
+		return ResponseEntity.ok().body("deleted");
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

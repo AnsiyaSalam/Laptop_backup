@@ -1,0 +1,50 @@
+.container {
+    border: 1px solid black;
+    margin: 0 100px 10px 100px;
+    min-height: 600px;
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+a {
+    font-family: 'monotype corsiva';
+    font-size: 18pt;
+}
+
+.contact-heading {
+    font-size: 20pt;
+    color: green;
+}
+
+.about-heading {
+    font-size: 20pt;
+    color: gray;
+}
+
+.footer {
+    padding: 20px;
+    color: white;
+    background-color: navy;
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    width:78.7%;
+    bottom:0px;
+}
+
+.img-clg {
+    width: 212px;
+    height: 150px;
+    border-radius: 5px;
+    margin-left:17px;
+    margin-right:11px;
+
+    
+}

@@ -1,0 +1,12 @@
+package ABC;
+
+class Employee {
+    String name;
+    int age;
+    int experience;
+    double salary;
+    String department;
+
+   
+}
+

@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>css-form</title>
+</head>
+<style>
+    .empid {
+        padding-top: 10px;
+    }
+
+    .empname {
+        padding-top: 10px;
+    }
+
+    .emploc {
+        padding-top: 10px;
+    }
+
+    .gender {
+        padding-top: 10px;
+    }
+
+    .gender-label {
+        margin-left: 80px;
+    }
+
+    .emp-lan {
+        margin-top: 10px;
+    }
+
+    .lan {
+        margin-left: 9px;
+    }
+
+    .button {
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+
+    #ename {
+        margin-left: 30px;
+    }
+
+    #eid {
+        margin-left: 51px;
+    }
+
+    #emploc {
+        margin-left: 76px;
+    }
+</style>
+
+<body>
+    <form>
+        <div class="empid">
+            <label>
+                Employee Id
+                <input type="text" name="emp-id" id="eid" placeholder="Enter employee id">
+            </label>
+        </div>
+
+        <div class="empname">
+            <label> Employee name
+                <input type="text" name="emp-name" id="ename" placeholder="Enter employee name">
+            </label>
+        </div>
+
+        <div class="emploc">
+            <label>
+                Location
+                <input type="text" name="emp-loc" id="emploc" placeholder="Enter employee location">
+            </label>
+        </div>
+
+        <div class="gender">
+            Gender
+            <label class="gender-label">
+                <input type="radio" name="emp-gender">Male
+                <input type="radio" name="emp-gender">Female
+            </label>
+        </div>
+
+        <div class="emp-lan">
+            <label for="language">Languages Known</label></td>
+            <label class="lan">
+                <input type="checkbox" name="languages" id="lan-eng" value="English" >English
+                <input type="checkbox" name="languages" id="lan-eng" value="Malayalam">Malayalam
+                <input type="checkbox" name="languages" id="lan-eng" value="Hindi">Hindi
+            </label>
+        </div>
+
+        <div class="button">
+            <button type="submit">Submit</button>
+            <button type="submit">clear</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

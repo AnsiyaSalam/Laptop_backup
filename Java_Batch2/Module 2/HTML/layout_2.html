@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>layout_2</title>
+        <style>
+            .container{
+                border: 1px solid black;
+                margin: 0 100px 0 100px;
+                min-height: 1000px;
+            }
+            .start{
+                height: 60px;
+                width: 931px;
+                color: white;
+                background-color: rgb(73, 70, 81);
+                padding: 30px;
+                display: flex;
+            }
+            .align{
+                margin-left: 40px;
+                padding: 20px 0 0 400px;
+            }
+            .pac{
+                margin: 10px;
+                display: inline;
+            }
+            .centerimg{
+                display: flex;
+                justify-content: center;
+                gap: 2px;
+            }
+            .img{
+                width: 280px;
+                height: 170px;
+                margin: 20px;
+            }
+            .about{
+                width: 991px;
+                text-align: center;
+                padding-top: 30px;
+                margin-top: 30px;
+                height: 408px;
+                color: white;
+                background-color: rgb(17, 215, 169);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- header -->
+            <div class="start">
+                <h3>START BOOTSTRAP</h3>
+                <div class="align">
+                    <div class="pac">PORTFOLIO</div>
+                    <div class="pac">ABOUT</div>
+                    <div class="pac">CONTACT</div>
+                </div>
+            </div>
+
+            <!-- underline + star -->
+            <div style="text-align: center;">
+                <div style="display:inline-flex; justify-content:center; align-items:center; padding:0;">
+                    <!-- line -->
+                    <hr width="110px;" color="black" size="6">
+                    <!-- star -->
+                    <p style="margin: 0 10px 0 10px;">&#9733</p>
+                    <!-- line -->
+                    <hr width="110px;" color="black" size="6">
+                </div>
+            </div>
+
+            <!-- first set of images -->
+            <div class="centerimg">
+                <img class="img" src="./layout2_img1.jpg">
+                <img class="img" src="./layout2_img2.jpg">
+                <img class="img" src="./layout2_img3.jpg">
+            </div>
+
+            <!-- second set of images -->
+            <div class="centerimg">
+                <img class="img" src="./layout2_img4.jpg">
+                <img class="img" src="./layout2_img5.jpg">
+                <img class="img" src="./layout2_img6.jpg">
+            </div>
+
+            <!-- About -->
+            <div class="about">
+                <h1>ABOUT</h1>
+                <div style="display:inline-flex; justify-content:center; align-items:center; padding:0;">
+                    <!-- line -->
+                    <hr width="90px;" color="white" size="5">
+                    <!-- star -->
+                    <p style="margin:0 10px 0 10px;">&#9733</p>
+                    <!-- line -->
+                    <hr width="90px;" color="white" size="5">
+                </div>
+                <div>
+                    <p style="text-align:justify;">
+                        HTML stands for HyperText Markup Language. It is used to design web pages using a markup 
+                        language. HTML is the combination of Hypertext and Markup language. Hypertext defines the 
+                        link between the web pages. A markup language is used to define the text document within 
+                        tag which defines the structure of web pages.HTML is a markup language that is used by the 
+                        browser to manipulate text, images, and other content to display it in the required format.
+                        Example: Let’s see a small example of a simple HTML page that displays the heading and 
+                        paragraph content.
+                    </p>                
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

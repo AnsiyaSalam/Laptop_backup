@@ -1,0 +1,5 @@
+package com.mysmartshop.product.service;
+
+public class ProductServiceImpl {
+
+}

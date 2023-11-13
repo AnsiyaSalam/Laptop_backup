@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum</title>
+    </head>
+
+    <body>
+        <input type="text" name="num1" id="num1" placeholder="Enter num1">
+        <input type="text" name="num2" id="num2" placeholder="Enter num2" >
+        <p>
+            <input type="text" id="output" placeholder="Output" readonly>
+        </p>
+        <button onClick = sum()>Add</button>
+    </body>
+
+    <script>
+        const sum = function()
+        {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = num1 + num2;
+            document.getElementById("output").value = result;
+        }
+    </script>
+</html>

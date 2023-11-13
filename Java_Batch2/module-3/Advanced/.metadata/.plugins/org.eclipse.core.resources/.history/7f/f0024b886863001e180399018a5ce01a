@@ -1,0 +1,10 @@
+package com.server.exception;
+
+public class DuplicateDataException {
+	
+	public DuplicateDataException(String msg)
+	{
+		super();
+	}
+
+}

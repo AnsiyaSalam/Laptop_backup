@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h2>Employee Details</h2>
+        <form>
+            <table>
+            <div>
+                <tr>
+                    <td><label for="employee-id">Employee ID</label></td>
+                    <td><input type="number" name="employeeid" id="employee-id"></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td><label for="employee-Name">Employee Name</label></td>
+                    <td><input type="text" name="employeeName" id="employee-Name"></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td><label for="Location">Location</label></td>
+                    <td><input type="text" name="Location" id="location"></td>
+                </tr>
+            </div>
+        </table>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="g-male" value="male">Male
+            <input type="radio" name="gender" id="g-female" value="female">Female
+        </div>
+
+        <div>
+            <label for="Languages">Languages Known</label>
+            <input type="checkbox" name="Languages" id="lang-eng" value="English">English
+            <input type="checkbox" name="Languages" id="lang-eng" value="Hindi">Hindi
+            <input type="checkbox" name="Languages" id="lang-eng" value="Malayalam">Malayalam
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </div>
+
+        <div>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="clear">Clear</button></td>
+            </tr>
+        </div>
+            
+        </form>
+    </body>
+</html>
+

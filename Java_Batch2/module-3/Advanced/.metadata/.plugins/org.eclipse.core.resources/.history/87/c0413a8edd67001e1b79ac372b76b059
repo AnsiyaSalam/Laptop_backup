@@ -1,0 +1,5 @@
+package com.ansiya.exception;
+
+public class FileNotFoundException {
+
+}

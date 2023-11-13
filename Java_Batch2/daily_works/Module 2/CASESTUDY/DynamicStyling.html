@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lamg="en">
+    <head>
+        <title>CaseStudy1</title>
+        <style>
+            
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            #main{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            #para1{
+                text-align: center;
+                background-color: black;
+                color: white;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 25px;
+                font-size: 1.5em;
+                line-height: 40px;
+                border-radius: 20px;
+            }
+
+            #id{
+                border: 0;
+                outline: 0;
+                background-color: rgb(47, 79, 79);
+                color: white;
+                padding: 10px;
+                font-size: 1.2em;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="main"></div>
+        <p id="para1">
+            This a problem where we will perform how to switch to dark mode in a Website using HTML, CSS, Javascript. 
+            We will write a piece of code with the help of which we will able to switch to Dark Mode. 
+            We will perform this practical right here. Let's do it.
+        </p>
+        <button id="btn">Switch to Dark Mode</button>
+
+        <script>
+            var btn = document.getElementById("btn");
+            var para1 = document.getElementById("para1");
+            var isDarkMode = false;
+
+            btn.addEventListener("click",function(){
+                if(isDarkMode)
+                {
+                    // Switch to dark mode
+                    document.body.style.backgroundColor = "white";
+                    para1.style.backgroundColor = "black";
+                    para1.style.color = "white";
+                    btn.style.backgroundColor = "rgb(47,7,79)";
+                    btn.style.color = "white";
+                    btn.textContent = "Switch to Dark Mode";
+                    isDarkMode = false;
+                }
+                else
+                {
+                    document.body.style.backgroundColor = "black";
+                    para1.style.backgroundColor = "white";
+                    para1.style.color = "black";
+                    btn.style.backgroundColor = "#dcdcdc";
+                    btn.style.color = "black";
+                    btn.textContent = "Switch to Light Mode";
+                    isDarkMode = true;
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="name" id="name" placeholder="input name">
+    <button type="button" onclick="readName()" id="add">add</button>
+    <ul id="list"></ul>
+</body>
+
+<script>
+    str = '';
+    const readName = function () {
+        let n = document.getElementById("name").value;
+        str += `<li>${n}</li>`;
+        document.getElementById("list").innerHTML = str
+    }
+</script>
+
+</html>
